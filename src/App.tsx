@@ -29,9 +29,9 @@ function App() {
           gap: "1.5rem",
           marginTop: "0.5rem",
         }}>
-          <div style={{ fontFamily: "cursive", color: isDark ? "#f5c842" : "#8B6914", fontSize: "1.1rem", lineHeight: 1.4 }}>
-            <div>model</div>
-            <div>{modelId}</div>   {/* ← show selected model name */}
+          <div style={{ color: isDark ? "#f5c842" : "#8B6914", fontSize: "1.5rem", lineHeight: 1.4 }}>
+            <div style={{ fontFamily: "'Georgia', serif", fontWeight: "bold" }}>model</div>
+            <div style={{ fontFamily: "'Georgia', serif", fontWeight: "bold" }}>{modelId}</div>
           </div>
 
           {/* Dropdown */}
@@ -39,14 +39,15 @@ function App() {
             value={modelId}
             onChange={(e) => setModelId(e.target.value)}
             style={{
-              fontSize: "0.9rem",
-              padding: "6px 10px",
+              fontSize: "1.3rem",
+              padding: "8px 14px",
               borderRadius: 8,
               border: "1px solid #ccc",
               backgroundColor: isDark ? "#3a3a3a" : "#fff",
               color: isDark ? "#e0e0e0" : "#000",
               cursor: "pointer",
-              fontFamily: "cursive",
+              fontFamily: "'Georgia', serif",
+              fontWeight: "bold",
             }}
           >
             <option value="gemini-3.5-flash">gemini-3.5-flash</option>
@@ -60,7 +61,7 @@ function App() {
               background: "none",
               border: "none",
               cursor: "pointer",
-              fontSize: "2rem",
+              fontSize: "3rem",
             }}
           >
             {isDark ? "🌙" : "💡"}

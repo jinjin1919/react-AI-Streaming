@@ -127,6 +127,9 @@ const ChatBot: React.FC<ChatBotProps> = ({ isDark, modelId}) => {
           <div className="chatbot-header bg-primary text-white p-2 fw-bold">
             <span style={{ fontSize: 25, marginTop: 2 }}>🤖</span>
             SWAT AI Agent
+            <span style={{ fontSize: 14, fontWeight: "normal", marginLeft: 10, opacity: 0.85 }}>
+              {modelId}
+            </span>
           </div>
 
           <div
